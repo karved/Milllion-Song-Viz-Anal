@@ -1,0 +1,49 @@
+body {
+    font-family: helvetica;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.d3-tip {
+    font-size: 12px;
+}
+
+path {
+    fill: none;
+    stroke: #666;
+    stroke-width: 1.5px;
+  }
+  
+  circle {
+    /* fill: #ccc; */
+    stroke: #fff;
+    stroke: black;
+    stroke-width: 1.5px;
+  }
+  
+
+.select_artists{
+    width: 200px
+}
+
+#chart-container {
+    position: relative;
+    height: relative;
+    overflow: hidden;
+  }
+
+.bt{
+    background-color: white !important;
+    border-radius: 30px !important;
+    color: black !important;
+    height: 50px !important;
+    text-align: center !important;
+    font-family: Montserrat !important;
+    box-shadow: none !important;
+    border: 3px solid black !important;
+}
+
+.bt:hover{
+    background-color: black !important;
+    color: white !important;
+}
