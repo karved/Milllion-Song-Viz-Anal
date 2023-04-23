@@ -81,7 +81,13 @@ The MXM dataset provides lyrics for 237,662 MSD tracks. The lyrics come in bag-o
 
 ### Data Cleaning & Pre-processing  
 
+**[extract_nodes_and_edges.ipynb](./CODE/notebooks/extract_nodes_and_edges.ipynb)**
+- Extracts artist information from artists.db, removes duplicate artists, combines aggregate data for artists from track_metadata.db such as total_tracks. Stores all of the artist data into nodes.csv. 
+- Extracts artist similarity information from artist_similarity.db, removes duplicate artists. Stores artist similarity data into edges.csv.
 
+**[combine_lyrics_data_with_MSD.ipynb](./CODE/notebooks/combine_lyrics_data_with_MSD.ipynb)**
+- Extracts the subset of songs for which lyrics data is available, stores this data into songs.csv.
+- Extracts lyrics data as word-count pairs mapped to each track_id into lyrics.csv.
 
 ### Data Analysis  
 
