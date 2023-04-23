@@ -7,6 +7,8 @@ import Slider from '@mui/material/Slider';
 import Button from '@mui/material/Button';
 import Graph from './Graph';
 import Navbar from '../Navbar';
+import * as d3 from 'd3';
+import{useEffect} from 'react';
 
 function DashboardNet() {
 
@@ -24,16 +26,20 @@ function DashboardNet() {
   const [tempA, setTempA] = React.useState(selectedArtist);
   const [tempS, setTempS] = React.useState(sliderValue);
 
-
+  useEffect(() => { 
+    d3.select("#tooltip").remove()
+    },[])
 
   return (
     <div>
       <Navbar val={1}/>
       <Container style={{marginTop:"2%",marginLeft:"15%", width:"85%"}}>
         <Box sx={{ flexGrow: 1 }}>
+        <h2 align="center">Artists Network</h2>
           <Grid container spacing={4}>
+            
             <Grid xs={3}>
-              <br></br>
+           
               <VirtualizedAutocomplete onSelectedArtist = {setTempA} />
               <br></br>
               <h3>Number of Artists</h3>

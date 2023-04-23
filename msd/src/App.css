@@ -25,11 +25,6 @@ path {
     width: 200px
 }
 
-#chart-container {
-    position: relative;
-    height: relative;
-    overflow: hidden;
-  }
 
 .bt{
     background-color: white !important;

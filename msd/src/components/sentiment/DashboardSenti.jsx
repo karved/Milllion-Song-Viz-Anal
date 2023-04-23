@@ -4,7 +4,7 @@ import{useEffect} from 'react';
 import Container from '@mui/material/Container';
 import Chart from './Chart.jsx';
 import * as d3 from 'd3'
-import sentiment from './data/sentiment_over_time.csv'
+import sentiment from './data/updated_sentiment_over_time_tfidf.csv';
 import Navbar from '../Navbar';
 
 export default function DashboardSenti() {
@@ -16,6 +16,8 @@ const [artist, setArtist] = React.useState([]);
 
 
   useEffect(() => { 
+
+    d3.select("#tooltip").remove()
 
     Promise.all([
           d3.dsv(",", sentiment, function (edge) {
@@ -44,8 +46,9 @@ const [artist, setArtist] = React.useState([]);
   return (
     <div>
       <Navbar val={3} />
-      <Container style={{marginTop:"5%",marginLeft:"15%", width:"85%"}}>
-      
+      <Container style={{marginTop:"2%",marginLeft:"15%", width:"85%"}}>
+        <h2 align="center">Sentiment Analysis</h2>
+        <br></br>
         <VirtualizedAutocomplete onSelectedArtist = {setSelectedArtist} artist = {artist} />
         <br></br> <br></br>
 

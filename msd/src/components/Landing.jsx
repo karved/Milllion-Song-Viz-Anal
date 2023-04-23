@@ -4,8 +4,15 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
+import * as d3 from 'd3';
+import{useEffect} from 'react';
 
 export default function Landing() {
+  
+  useEffect(() => { 
+    d3.select("#tooltip").remove()
+    },[])
+
   return (
     <div>
       <div align = "center" style={{marginTop: "7%"}}>

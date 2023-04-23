@@ -23,15 +23,15 @@ const Graph = (props) => {
         
     // SVG Dimensions
     var width = 950;
-    var height = 700;
-    var margins = { left: 50, right: 50, top: 50, bottom: 50 };
+    var height = 650;
+    var margins = { left: 50, right: 30, top: 50, bottom: 50 };
     var networkGraphWidth = width - margins.left - margins.right;
     var networkGraphHeight = height - margins.top - margins.bottom;
     var radiusScale = d3.scaleLinear().range([5, 25]);
     const colors = { 'SELECTED': '#33a02c', 'DEFAULT': '#a6cee3', 'EXPANDED': '#b2df8a', 'TOP': '#fb9a99'};
     var nodes, edges, allNodesMap, artistEdges;
     var path, node;
-    var graph, recommendationsDiv, recommendationsToDisplay;
+    var graph, recommendationsToDisplay;
     var recommendations = [];
     var expandedArtists = [];
     var force;
@@ -86,10 +86,6 @@ const Graph = (props) => {
                     .attr("width", width - margins.left - margins.right)
                     .attr("height", height - margins.top - margins.bottom)
                     .attr("transform", "translate( " + margins.left + ", "+ margins.top + ")");
-
-        recommendationsDiv = d3.select("body")
-                    .append("div")
-                    .attr("id", "recommendations-div");
 
         fetchGraphData(props.sA);
         getRecommendations();
@@ -217,9 +213,6 @@ const Graph = (props) => {
                     .attr("height", height - margins.top - margins.bottom)
                     .attr("transform", "translate( " + margins.left + ", "+ margins.top + ")");
 
-        recommendationsDiv = d3.select("body")
-                    .append("div")
-                    .attr("id", "recommendations-div");
     }
 
     /**

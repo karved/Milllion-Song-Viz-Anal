@@ -28,16 +28,34 @@ function Chart (props) {
     xAxis: [
       {
         type: 'category',
+        name: "Year",
         data: props.data.map(item => item.year),
-   
+        
       }
     ],
     yAxis: [
       {
         type: 'value',
+        name: "Sentiment Score",
    
       }
     ],
+    toolbox: {
+      feature: {
+        dataZoom: {
+          yAxisIndex: 'none'
+        },
+        saveAsImage: {}
+      }
+    },
+    // dataZoom: [
+    //   {
+    //     type: 'inside'
+    //   },
+    //   {
+    //     type: 'slider'
+    //   }
+    // ],
     series: [
   
       {
@@ -68,7 +86,7 @@ function Chart (props) {
     ]
   };
 
-  return <ReactECharts option={options} />;
+  return <ReactECharts option={options} style={{ height: "400%" }}  />;
 };
 
 export default Chart;
