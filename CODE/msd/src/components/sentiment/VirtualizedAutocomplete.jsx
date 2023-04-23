@@ -3,6 +3,8 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { List } from "react-virtualized";
 
+
+
 const ListboxComponent = React.forwardRef(function ListboxComponent(
   props,
   ref
@@ -37,6 +39,7 @@ export default function VirtualizedAutocomplete(props) {
   return (
     <div>
       <Autocomplete
+        multiple
         id="virtualize-demo"
         style={{ width: 350 }}
         disableListWrap
@@ -45,8 +48,8 @@ export default function VirtualizedAutocomplete(props) {
         }}
         ListboxComponent={ListboxComponent}
         options={props.artist}
-        defaultValue={'Akon'}
-        // getOptionLabel={(option) => option.artist_name}
+        defaultValue={['Akon']}
+
         renderInput={params => (
           <TextField
             {...params}

@@ -86,7 +86,7 @@ function Chart (props) {
     ]
   };
 
-  return <ReactECharts option={options} style={{ height: "400%" }}  />;
+  return <ReactECharts option={options} style={{ marginTop:"10%", marginLeft:"10%",marginRight:"-5%", height:"50vh" }}  />;
 };
 
 export default Chart;
