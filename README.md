@@ -68,13 +68,24 @@ Live Demo - **https://million-song-viz.web.app/**
 
 ### Data Collection  
   
-.. .  
+#### Million Song Dataset (MSD)
+The MSD dataset consists of almost all the information available through The Echo Nest API for one million popular tracks. This encompasses both metadata and audio analysis features. Some of the metadata features include song title, album, artist information, duration, and release year. In particular, artist information includes artist name, artist familiarity, artist hotness, and a list of 100 similar artists. The audio features include bars start, beat start, energy, key, loudness, sections start, tempo, and time signature. 
 
+We downloaded the MSD dataset as SQLite database files from [MSD website](http://millionsongdataset.com/pages/getting-dataset/):
+1. **track_metadata.db**: Contains metadata of each track (1,000,000 rows)
+2. **artists.db**: Contains information about artists, mapped to the tracks by artist_id (44,745 rows)
+3. **artist_similarity.db**: Contains artist similarity information as assymetric similarity relationships using source_artist_id and target_artist_id (2,201,916 rows)
 
+#### MusixMatch (MXM)
+The MXM dataset provides lyrics for 237,662 MSD tracks. The lyrics come in bag-of-words format: each track is described as the word-counts for a dictionary of the top 5,000 words across the set. This dataset is also available as a SQLite database file at the [MusixMatch Website](http://millionsongdataset.com/musixmatch/).
 
 ### Data Cleaning & Pre-processing  
-...  
-....  
+
+
+
+We downloaded the following 
+The MXM dataset provides lyrics for 237,662 MSD tracks. The lyrics come in bag-of-words format: each track is described as the word-counts for a dictionary of the top 5,000 words across the set. We use the MXM dataset as a supplement to the MSD dataset for lyric analysis.
+
 
 ### Data Analysis  
 
