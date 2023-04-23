@@ -1,4 +1,4 @@
-# Milllion-Song-Viz-Anal
+# Milllion-Song-Viz-Analysis
 
 ## Data Collection  
   
