@@ -25,7 +25,7 @@ Word_frequency_data.py - It requires lyrics.csv and songs.csv from the data. It 
 
 ## Data Visualization  
 ### Network Visualization
-It was made using D3.js. A searchbox is present with over 40k artists. The graph related data is being read from `nodes.csv` and `edges.csv`. A slider lets the user control how many similar artists they want to see. Once the user selects an artist, they can see a network graph with the selected artist in the center. The node size depends on the number of tracks by that artist. Users can hover over any node to view more information like `average_familiarity`, 'average_hotness'. Double clicking on any node expands/collapses the network of that node, to interactively expand or collapse the entire visualization. At any point, all the visible nodes are compared by their frequency of occurrences to get the top 5 recommended artists. 
+It was made using D3.js. A searchbox is present with over 40k artists. The graph related data is being read from `nodes.csv` and `edges.csv`. A slider lets the user control how many similar artists they want to see. Once the user selects an artist, they can see a network graph with the selected artist in the center. The node size depends on the number of tracks by that artist. Users can hover over any node to view more information like `average_familiarity`, `average_hotness`. Double clicking on any node expands/collapses the network of that node, to interactively expand or collapse the entire visualization. At any point, all the visible nodes are compared by their frequency of occurrences to get the top 5 recommended artists. 
 
 ### PowerBI Visualization. 
 
