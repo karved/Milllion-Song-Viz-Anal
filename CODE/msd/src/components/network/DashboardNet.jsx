@@ -9,6 +9,7 @@ import Graph from './Graph';
 import Navbar from '../Navbar';
 import * as d3 from 'd3';
 import{useEffect} from 'react';
+import Legend from './Legend';
 
 function DashboardNet() {
 
@@ -27,7 +28,8 @@ function DashboardNet() {
   const [tempS, setTempS] = React.useState(sliderValue);
 
   useEffect(() => { 
-    d3.select("#tooltip").remove()
+    d3.select("#tooltip").remove();
+
     },[])
 
   return (
@@ -68,8 +70,9 @@ function DashboardNet() {
 
               </div>
               
-              <div align="center" id="recommendations-div" style={{marginTop:"30%"}} />
-              
+              <div align="center" id="recommendations-div" style={{marginTop:"20%",marginBottom:"10%"}} />
+              <Legend  />
+
             </Grid>
             <Grid xs>
             <Graph sA={selectedArtist} sV={sliderValue} />
