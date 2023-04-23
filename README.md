@@ -83,10 +83,6 @@ The MXM dataset provides lyrics for 237,662 MSD tracks. The lyrics come in bag-o
 
 
 
-We downloaded the following 
-The MXM dataset provides lyrics for 237,662 MSD tracks. The lyrics come in bag-of-words format: each track is described as the word-counts for a dictionary of the top 5,000 words across the set. We use the MXM dataset as a supplement to the MSD dataset for lyric analysis.
-
-
 ### Data Analysis  
 
 **network_algs.ipynb** : It requires `edges.csv` and `nodes.csv` from an earlier step. It tests 3 community detection algorithms and constructs `nodes_with_clusters.csv` using cluster assignments to optimize modularity. It can be run in Google Colab or locally, e.g. via VSCode.
