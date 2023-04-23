@@ -11,6 +11,10 @@ Mention the input & output files used to perform a task, packages used and chall
 ....  
 
 ## Data Analysis  
+
+network_algs.ipynb - It requires edges.csv and nodes.csv from an earlier step. It tests 3 community detection algorithms and constructs nodes_with_clusters.csv using cluster assignments to optimize modularity. It can be run in Google Colab or locally, e.g. via VSCode.
+
+lyric_analysis.ipynb - It requires lyrics.csv and songs.csv from the data. It finds tf-idf of the lyrics and does sentiment analysis of the lyrics words, finding aggregate cumulative sentiment metrics. It constructs the files tfidf.csv, sentiment_over_time.csv, and combined_count_tfidf_sentiment.csv, among others, to contain this information. It can be run in Google Colab or locally, e.g. via VSCode.
 ...  
 ... 
 
