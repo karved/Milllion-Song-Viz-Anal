@@ -27,8 +27,9 @@ Word_frequency_data.py - It requires lyrics.csv and songs.csv from the data. It 
 ...  
 
 
-##To Run the power BI visualization. 
-You can run the Wordfrequency.html file to view the Power BI visulization or you can access it using the following link https://app.powerbi.com/view?r=eyJrIjoiYzVhYzA2YTAtODYyOC00NmUxLWI4NWQtYmNjZmJhZDJiMjdhIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9&pageName=ReportSection%22%20frameborder=%220%22%20allowFullScreen=%22true%22.
+### PowerBI Visualization. 
+
+You can access it using the following link https://app.powerbi.com/view?r=eyJrIjoiYzVhYzA2YTAtODYyOC00NmUxLWI4NWQtYmNjZmJhZDJiMjdhIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9&pageName=ReportSection%22%20frameborder=%220%22%20allowFullScreen=%22true%22.
 
 You will Have either install Power BI desktop/ use the online version app.powerbi.com. 
 Once you have the tool would will import the data into the power bi tool.
