@@ -40,8 +40,10 @@ For the Word Cloud:
 3) For Both the Visualization we have the Artist name and the Song name as the filters which are basic slicers from the Power BI tool set. 
 
 4) The Next step is to save the report. 
-    4.1) If you are developing this in power BI desktop you will have to save the file locally and then publish the report to you app.powerbi.com workspace. 
-    4.2) If you are developing this in the online version which is app.powerbi.com you can skil step 4.1
+   
+   4.1) If you are developing this in power BI desktop you will have to save the file locally and then publish the report to you app.powerbi.com workspace. 
+   
+   4.2) If you are developing this in the online version which is app.powerbi.com you can skil step 4.1
 5) To make the report accessable to public user you will then publish the report to web.
 6) You will be able to access the PowerBI report through a PowerBI embedded link which you can add into a iFrame to insert it into html page.
 
