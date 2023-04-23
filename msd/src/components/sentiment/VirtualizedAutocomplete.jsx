@@ -1,6 +1,4 @@
 import React from "react";
-import * as d3 from 'd3';
-import {useEffect} from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { List } from "react-virtualized";

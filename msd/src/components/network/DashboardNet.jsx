@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 import Slider from '@mui/material/Slider';
 import Button from '@mui/material/Button';
 import Graph from './Graph';
+import Navbar from '../Navbar';
 
 function DashboardNet() {
 
@@ -23,16 +24,15 @@ function DashboardNet() {
   const [tempA, setTempA] = React.useState(selectedArtist);
   const [tempS, setTempS] = React.useState(sliderValue);
 
-  console.log(tempA,tempS)
 
 
   return (
     <div>
-      <br></br><br></br>
-      <Container maxWidth="xl">
+      <Navbar val={1}/>
+      <Container style={{marginTop:"2%",marginLeft:"15%", width:"85%"}}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={4}>
-            <Grid xs={4}>
+            <Grid xs={3}>
               <br></br>
               <VirtualizedAutocomplete onSelectedArtist = {setTempA} />
               <br></br>
@@ -48,16 +48,22 @@ function DashboardNet() {
                 setTempS(newValue)
               }}
                />
-              <br></br><br></br><br></br>
-              <Button className="bt" variant="contained"
+               <br></br>
+               <div align="center" style={{marginTop:"10%"}}>
+                <Button className="bt" variant="contained"
                     onClick={() => { 
                                     setSelectedArtist(tempA)
                                     setSliderValue(tempS)
                         }}>
                       Search
               </Button>
-              <br></br><br></br><br></br><br></br>
-              <div id="recommendations-div" />
+           
+             
+
+              </div>
+              
+              <div align="center" id="recommendations-div" style={{marginTop:"30%"}} />
+              
             </Grid>
             <Grid xs>
             <Graph sA={selectedArtist} sV={sliderValue} />

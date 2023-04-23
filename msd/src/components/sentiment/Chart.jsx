@@ -8,24 +8,34 @@ function Chart (props) {
       trigger: 'axis',
       axisPointer: {
         type: 'shadow'
+      },
+      textStyle: {
+        fontFamily: 'Montserrat'
+      },
+    },
+    legend: {
+      textStyle: {
+        fontFamily: 'Montserrat'
       }
     },
-    legend: {},
     grid: {
       left: '3%',
       right: '4%',
       bottom: '3%',
-      containLabel: true
+      containLabel: true,
+      
     },
     xAxis: [
       {
         type: 'category',
-        data: props.data.map(item => item.year)
+        data: props.data.map(item => item.year),
+   
       }
     ],
     yAxis: [
       {
-        type: 'value'
+        type: 'value',
+   
       }
     ],
     series: [
@@ -34,6 +44,7 @@ function Chart (props) {
         name: 'Positive',
         type: 'bar',
         stack: 'Ad',
+        color: "#b2df8a",
   
         data: props.data.map(item => item.positive)
       },
@@ -41,6 +52,7 @@ function Chart (props) {
         name: 'Negative',
         type: 'bar',
         stack: 'Ad',
+        color: "#fb9a99",
   
         data: props.data.map(item => item.negative)
       },
@@ -48,6 +60,7 @@ function Chart (props) {
         name: 'Neutral',
         type: 'bar',
         stack: 'Ad',
+        color: "#a6cee3",
     
         data: props.data.map(item => item.neutral)
       },

@@ -71,6 +71,16 @@ export default function VirtualizedAutocomplete(props) {
         }}
         ListboxComponent={ListboxComponent}
         options={options}
+        defaultValue={{
+          "artist_id": "ARCGJ6U1187FB4D01F",
+          "artist_name": "Akon",
+          "avg_duration": 234.80339679245287,
+          "avg_familiarity": 0.9902253716581698,
+          "avg_hotness": 0.8267770134909992,
+          "total_tracks": 53,
+          "x": 450.67885467558176,
+          "y": 35.67568001936708
+      }}
         getOptionLabel={(option) => option.artist_name}
         renderInput={params => (
           <TextField

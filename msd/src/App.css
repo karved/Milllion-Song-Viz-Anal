@@ -1,5 +1,4 @@
 body {
-    font-family: helvetica;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
 }
@@ -46,4 +45,8 @@ path {
 .bt:hover{
     background-color: black !important;
     color: white !important;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }

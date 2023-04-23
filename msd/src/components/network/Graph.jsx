@@ -20,15 +20,15 @@ const Graph = (props) => {
     
     setLoading(true);
     d3.select("#my_dataviz").selectAll("*").remove()
-  
+        
     // SVG Dimensions
-    var width = 900;
-    var height = 650;
+    var width = 950;
+    var height = 700;
     var margins = { left: 50, right: 50, top: 50, bottom: 50 };
     var networkGraphWidth = width - margins.left - margins.right;
     var networkGraphHeight = height - margins.top - margins.bottom;
     var radiusScale = d3.scaleLinear().range([5, 25]);
-    const colors = { 'SELECTED': '#E0538F', 'DEFAULT': '#2E64A2', 'EXPANDED': '#95D134', 'TOP': '#F4BA4E'};
+    const colors = { 'SELECTED': '#33a02c', 'DEFAULT': '#a6cee3', 'EXPANDED': '#b2df8a', 'TOP': '#fb9a99'};
     var nodes, edges, allNodesMap, artistEdges;
     var path, node;
     var graph, recommendationsDiv, recommendationsToDisplay;
@@ -317,7 +317,8 @@ const Graph = (props) => {
                         .enter()
                         .append("tr")
                         .append("td")
-                        .text(function(d){ return d[0]; });
+                        .text(function(d){ return d[0]; })
+                        .attr("align","center");
                         
         return (recommendationsToDisplay)
     }

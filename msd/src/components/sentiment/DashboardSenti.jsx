@@ -1,12 +1,11 @@
 import React from 'react';
 import VirtualizedAutocomplete from "./VirtualizedAutocomplete";
 import{useEffect} from 'react';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
 import Chart from './Chart.jsx';
 import * as d3 from 'd3'
 import sentiment from './data/sentiment_over_time.csv'
+import Navbar from '../Navbar';
 
 export default function DashboardSenti() {
 
@@ -44,20 +43,14 @@ const [artist, setArtist] = React.useState([]);
 
   return (
     <div>
-      <br></br><br></br>
-      <Container maxWidth="xl">
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={4}>
-            <Grid xs={4}>
-            <VirtualizedAutocomplete onSelectedArtist = {setSelectedArtist} artist = {artist} />
+      <Navbar val={3} />
+      <Container style={{marginTop:"5%",marginLeft:"15%", width:"85%"}}>
+      
+        <VirtualizedAutocomplete onSelectedArtist = {setSelectedArtist} artist = {artist} />
+        <br></br> <br></br>
 
-            </Grid>
-            <Grid xs>
-              <Chart data = {data.filter(item => item.artist_name === selectedArtist)}/>
+        <Chart data = {data.filter(item => item.artist_name === selectedArtist)}/>
 
-            </Grid>
-          </Grid>
-      </Box>
     </Container>
 
 
