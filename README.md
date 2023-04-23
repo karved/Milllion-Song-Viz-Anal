@@ -5,7 +5,7 @@
 ### Description  
 
 This website is built using [React.js](https://react.dev/). It has 3 sections of interactions:  
-1. **Artists Network** - A force directed graph layout showing relationship between related artists and provides a Top 5 recommendation.  
+1. **Artists Network** - A force directed graph layout showing relationship between related artists and provides a Top 7 recommendation.  
 
 2. **Lyrics Analysis** - Displays trends of words as a barchart and word cloud for a combination of artists and song titles.  
 
@@ -15,7 +15,7 @@ This website is built using [React.js](https://react.dev/). It has 3 sections of
 Each of these webpages are independant of each other using different .csv files taken from the same dataset. Description of the dataset collection, analysis, visualization, installations, executions & demo setup can be found in further sections below.  
   
 
-Live Demo - https://million-song-viz.web.app/  
+Live Demo - **https://million-song-viz.web.app/**
 
 
 ### Installation  
@@ -69,7 +69,7 @@ Live Demo - https://million-song-viz.web.app/
 ### Data Collection  
   
 .. .  
-  
+
 
 
 ### Data Cleaning & Pre-processing  
