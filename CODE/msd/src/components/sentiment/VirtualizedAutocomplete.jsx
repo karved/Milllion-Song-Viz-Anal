@@ -39,7 +39,7 @@ export default function VirtualizedAutocomplete(props) {
   return (
     <div>
       <Autocomplete
-        multiple
+        // multiple
         id="virtualize-demo"
         style={{ width: 350 }}
         disableListWrap
@@ -48,7 +48,7 @@ export default function VirtualizedAutocomplete(props) {
         }}
         ListboxComponent={ListboxComponent}
         options={props.artist}
-        defaultValue={['Akon']}
+        defaultValue={'Akon'}
 
         renderInput={params => (
           <TextField

@@ -12,7 +12,7 @@ import Navbar from '../Navbar';
 export default function DashboardSenti() {
 
   const [data,setData] = React.useState([])
-  const [selectedArtist, setSelectedArtist] = React.useState(["Akon"]);
+  const [selectedArtist, setSelectedArtist] = React.useState("Akon");
   const [artist, setArtist] = React.useState([]);
 // const [tempA, setTempA] = React.useState(selectedArtist);
 
@@ -59,7 +59,7 @@ export default function DashboardSenti() {
             <VirtualizedAutocomplete onSelectedArtist = {setSelectedArtist} artist = {artist} />
             </Grid>
           <Grid xs>
-            <Chart data = {data.filter(item => selectedArtist.includes(item.artist_name))} />
+            <Chart data = {data.filter(item => item.artist_name === selectedArtist)} />
           </Grid>
         </Grid>
       </Box>
