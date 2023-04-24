@@ -17,7 +17,7 @@ export default function Landing() {
     <div>
       <div align = "center" style={{marginTop: "7%"}}>
       <h1>
-        Big Data Music <br></br>Visualization & Analysis
+        Big Data Song <br></br>Visualization & Analysis
       </h1>
       <Container style={{width:"50%", marginTop:"3%"}}>
         <Box sx={{ flexGrow: 1}}>

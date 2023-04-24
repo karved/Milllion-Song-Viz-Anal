@@ -23,7 +23,7 @@ export default function Navbar(props) {
       >
            <div style={{ marginTop:"20%" , color:"white" ,fontSize:"20px"}} align="center">
            <Link to={"/"}>
-            Big Data Music <br></br>Visualization & Analysis
+            Big Data Song <br></br>Visualization & Analysis
             </Link>
            {(props.val===2 || props.val === 3) && <div style={{marginTop:"20%"}}>
                 <Link to={"/network"}>
